@@ -243,8 +243,12 @@ p {
 
 .c-angry-robot {
   position: absolute;
+  width: 4.79vw;
   bottom: 16.18vw;
   right: 13.88vw;
+}
+.c-angry-robot img {
+  width: 100%;
 }
 
 .c-intro {
@@ -520,6 +524,7 @@ p {
   position: absolute;
   bottom: 0;
   left: 61.32vw;
+  width: 13.75vw;
 }
 
 .c-faq {

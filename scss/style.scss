@@ -235,8 +235,13 @@ p {
 
 .c-angry-robot {
 	position: absolute;
+	width: 4.79vw;
 	bottom: 16.18vw;
 	right: 13.88vw;
+
+	img {
+		width: 100%;
+	}
 }
 
 .c-intro {

@@ -1,0 +1,10 @@
+<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="27" height="27" fill="#FFF500"/>
+<g style="mix-blend-mode:multiply">
+<rect x="27" width="27" height="27" fill="#FF5151"/>
+</g>
+<rect x="27" y="27" width="27" height="27" fill="#00FFC2"/>
+<g style="mix-blend-mode:multiply">
+<rect y="27" width="27" height="27" fill="#8B62FF"/>
+</g>
+</svg>

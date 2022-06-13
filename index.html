@@ -13,6 +13,7 @@
 		/>
 		<link rel="stylesheet" href="css/fonts/stylesheet.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
 	</head>
 	<body>
 		<header class="c-header">
@@ -21,7 +22,12 @@
 					<img src="img/logo.png" alt="Logo" />
 				</div>
 				<div class="c-header__desc">
-					<img src="img/logo-desc.png" alt="Logo-desc" />
+					<img src="img/logo-desc.png" alt="Logo-desc" class="u-hide--mobile" />
+					<img
+						src="img/logo-desc-mobile.png"
+						alt="Logo-desc"
+						class="u-show--mobile"
+					/>
 				</div>
 			</div>
 		</header>
@@ -29,7 +35,12 @@
 			<div class="o-container">
 				<div class="c-main__wrapper">
 					<div class="c-main__img">
-						<img src="img/main-img.png" alt="Main" />
+						<img src="img/main-img.png" alt="Main" class="u-hide--mobile" />
+						<img
+							src="img/main-img-mobile.png"
+							alt="Main"
+							class="u-show--mobile"
+						/>
 					</div>
 					<div class="c-main-buttons__wrapper">
 						<button class="c-button c-button--green">PRE-Order</button>
@@ -77,8 +88,21 @@
 					further.
 				</p>
 				<div class="c-info__nfc">
-					<img src="img/phone-nfc.svg" alt="Phone NFC" class="c-phone-nfc" />
-					<img src="img/hito-orange.svg" alt="Hito" class="c-hito-orange" />
+					<img
+						src="img/phone-nfc.svg"
+						alt="Phone NFC"
+						class="c-phone-nfc u-hide--mobile"
+					/>
+					<img
+						src="img/hito-orange.svg"
+						alt="Hito"
+						class="c-hito-orange u-hide--mobile"
+					/>
+					<img
+						src="img/phone-nfc-mobile.png"
+						alt="Phone NFC"
+						class="c-phone-nfc u-show--mobile"
+					/>
 					<span class="c-info__text"
 						>You shouldn’t compromise your wallet with a USB-port. That’s why
 						Hito uses NFC to connect to your phone</span
@@ -104,7 +128,7 @@
 					actually see all the (very precious) NFTs you store.
 				</p>
 
-				<div class="c-info__display">
+				<div class="c-info__display u-hide--mobile">
 					<img
 						src="img/hito-display.png"
 						alt="Hito Display"
@@ -125,10 +149,23 @@
 				</p>
 
 				<div class="c-info__size">
-					<img src="img/lighter.svg" alt="Lighter" class="c-lighter" />
-					<img src="img/hito-size.png" alt="Hito size" class="c-hito-size" />
+					<img
+						src="img/lighter.svg"
+						alt="Lighter"
+						class="c-lighter u-hide--mobile"
+					/>
+					<img
+						src="img/hito-size.png"
+						alt="Hito size"
+						class="c-hito-size u-hide--mobile"
+					/>
+					<img
+						src="img/hito-size-mobile.png"
+						alt="Hito size"
+						class="c-hito-size u-show--mobile"
+					/>
 
-					<span class="c-info__text"
+					<span class="c-info__text u-hide--mobile"
 						>Other wallets resemble a flash drive — small and thick. Hito is
 						different — small and thin</span
 					>

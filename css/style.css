@@ -4,7 +4,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Menlo Regular";
+  font-family: "Roboto";
 }
 
 body {
@@ -12,7 +12,6 @@ body {
 }
 
 h2 {
-  font-family: "Menlo Bold";
   font-weight: 700;
   font-size: 4.16vw;
   line-height: 6.04vw;
@@ -28,7 +27,6 @@ h3 {
 }
 
 h4 {
-  font-family: "Menlo Bold";
   font-weight: 700;
   font-size: 2.08vw;
   line-height: 3.47vw;
@@ -37,7 +35,6 @@ h4 {
 }
 
 b {
-  font-family: "Menlo Bold";
   font-weight: 700;
 }
 
@@ -143,7 +140,6 @@ p {
   width: 20vw;
   height: 3.75vw;
   border: 0;
-  font-family: "Menlo Bold";
   font-weight: 700;
   font-size: 2.08vw;
   line-height: 3.47vw;
@@ -218,7 +214,6 @@ p {
   color: #e0ede3;
 }
 .c-subtitle-block h2 .u-red {
-  font-family: "Menlo Bold";
   position: relative;
 }
 .c-subtitle-block h2 .u-red::after {

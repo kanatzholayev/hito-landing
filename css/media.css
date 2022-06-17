@@ -23,11 +23,22 @@
     font-size: 20px;
     line-height: 43px;
   }
+  p img {
+    width: 25px;
+    height: 25px;
+    -webkit-transform: translateY(15%) scale(1.92);
+            transform: translateY(15%) scale(1.92);
+    margin: 0 12px;
+  }
 
   .o-container {
     max-width: 366px;
     margin: 0 auto;
     padding: 0 12px;
+  }
+
+  .u-a::after {
+    bottom: 2px;
   }
 
   .u-show--mobile {
@@ -43,6 +54,10 @@
     height: 47px;
   }
 
+  .c-header {
+    margin-top: 11px;
+  }
+
   .c-header__logo {
     width: 108px;
   }
@@ -51,26 +66,51 @@
     width: 219px;
   }
 
+  .c-main {
+    min-height: calc(100vh - 124px);
+    margin-top: 42px;
+  }
+
   .c-main__img {
-    max-width: 329px;
-    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: calc(100vh - 304px);
+  }
+  .c-main__img img {
+    max-width: 100%;
+    height: 100%;
   }
 
   .c-main-buttons__wrapper {
-    -webkit-column-gap: 24px;
-       -moz-column-gap: 24px;
-            column-gap: 24px;
-    margin: 18px 0;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+    margin: 18px 0 24px;
   }
 
   .c-button {
-    width: 171px;
+    width: 100%;
     height: 48px;
     font-size: 22px;
     line-height: 48px;
   }
   .c-button::after, .c-button::before {
     display: none;
+  }
+
+  .c-subtitle-block .o-container,
+.c-intro .o-container {
+    max-width: 100%;
   }
 
   .c-subtitle-block {
@@ -145,13 +185,6 @@
     max-width: 100%;
     padding-left: unset;
     margin-bottom: 41px;
-  }
-  .c-info p img {
-    width: 25px;
-    height: 25px;
-    -webkit-transform: translateY(15%) scale(1.92);
-            transform: translateY(15%) scale(1.92);
-    margin: 0 12px;
   }
 
   .c-info__nfc {
@@ -303,6 +336,8 @@
   }
 
   .c-explore {
+    max-width: 100vw;
+    overflow-x: hidden;
     padding-bottom: 200px;
   }
   .c-explore h2 {
@@ -323,7 +358,8 @@
     height: 100px;
   }
   .c-accordion__btn::after {
-    display: none;
+    width: 12px;
+    height: 20px;
   }
 
   .c-panel p {
@@ -351,5 +387,53 @@
   }
   .c-footer__text br {
     display: none;
+  }
+
+  .c-join {
+    margin: 38px 0;
+  }
+  .c-join::before, .c-join::after {
+    width: 364px;
+    height: 12px;
+    background-image: url("../img/block-border-mobile.png");
+    background-size: contain;
+    background-position: center;
+  }
+  .c-join h2 {
+    margin-top: 58px;
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .c-join p {
+    line-height: 34px;
+    margin-bottom: 43px;
+    max-width: 100%;
+  }
+  .c-join p .c-gift {
+    -webkit-transform: translateY(35%) scale(1.92);
+            transform: translateY(35%) scale(1.92);
+  }
+  .c-join .c-button--black:last-child {
+    margin-bottom: 58px;
+  }
+
+  .c-button--black {
+    width: 100%;
+    height: 54px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .c-info__display {
+    padding-left: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 56px;
+  }
+  .c-info__display .c-hito-display {
+    width: 201px;
+    margin-right: unset;
   }
 }

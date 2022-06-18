@@ -73,7 +73,7 @@ button {
 .u-rainbow::after {
   content: "";
   position: absolute;
-  top: 0.81vw;
+  top: 0.65vw;
   left: -0.41vw;
   width: 100%;
   height: 3.75vw;
@@ -255,9 +255,9 @@ button {
 }
 .c-button--yellow::after {
   content: "";
-  width: 4.72vw;
-  height: 7.08vw;
-  background-image: url("../img/rabbit.svg");
+  width: 4.86vw;
+  height: 8.68vw;
+  background-image: url("../img/rabbit.gif");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;

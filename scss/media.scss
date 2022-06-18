@@ -21,7 +21,7 @@
 
 	p {
 		font-size: 20px;
-		line-height: 43px;
+		line-height: 41px;
 
 		img {
 			width: 25px;
@@ -34,7 +34,7 @@
 	.o-container {
 		max-width: 366px;
 		margin: 0 auto;
-		padding: 0 12px;
+		padding: 0 10px;
 	}
 
 	.u-a::after {
@@ -191,7 +191,7 @@
 		p {
 			max-width: 100%;
 			padding-left: unset;
-			margin-bottom: 41px;
+			margin-bottom: 44px !important;
 		}
 	}
 
@@ -439,8 +439,8 @@
 			background-position: center;
 		}
 		h2 {
-			margin-top: 58px;
-			margin-bottom: 28px;
+			margin-top: 58px !important;
+			margin-bottom: 33px;
 			font-size: 36px;
 			line-height: 50px;
 		}

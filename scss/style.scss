@@ -38,7 +38,7 @@ b {
 }
 
 p {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2.08vw;
 	line-height: 3.47vw;
 
@@ -303,6 +303,7 @@ button {
 
 	.c-dog {
 		width: 4.86vw;
+		transform: translateY(8%);
 	}
 
 	&::after {

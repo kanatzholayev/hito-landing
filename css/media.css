@@ -33,7 +33,7 @@
   }
 
   .o-container {
-    max-width: 366px;
+    max-width: 390px;
     margin: 0 auto;
     padding: 0 10px;
   }
@@ -43,7 +43,7 @@
   }
 
   .u-show--mobile {
-    display: unset;
+    display: unset !important;
   }
 
   .u-hide--mobile {
@@ -176,6 +176,7 @@
   }
 
   .c-info {
+    overflow-x: hidden;
     padding: 62px 0 37px;
   }
   .c-info h2 {

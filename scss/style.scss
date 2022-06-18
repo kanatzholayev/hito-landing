@@ -6,6 +6,10 @@
 	font-family: "Roboto Mono";
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #ecf5ee;
 }
@@ -174,6 +178,7 @@ button {
 
 .c-button {
 	cursor: pointer;
+	display: flex;
 	position: relative;
 	width: 23.61vw;
 	height: 3.75vw;
@@ -184,6 +189,9 @@ button {
 	text-align: center;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
 	color: #252926;
 }
 
@@ -255,6 +263,7 @@ button {
 			position: relative;
 
 			&::after {
+				display: none;
 				content: "";
 				width: 0.07vw;
 				height: 5vw;
@@ -576,6 +585,7 @@ button {
 }
 
 .c-faq {
+	display: none;
 	margin-top: 7.84vw;
 
 	h2 {
@@ -732,4 +742,15 @@ button {
 	line-height: 3.47vw;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.u-dot {
+	width: 0.41vw;
+	display: inline-flex;
+	justify-content: center;
+}
+
+.u-inline-block {
+	display: inline-block;
 }

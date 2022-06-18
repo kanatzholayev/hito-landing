@@ -7,6 +7,7 @@
 	h2 {
 		font-size: 47px;
 		line-height: 61px;
+		letter-spacing: -1px;
 	}
 
 	h3 {
@@ -50,10 +51,16 @@
 	}
 
 	.u-rainbow {
+		display: inline;
+		padding-right: unset;
 		&::after {
 			width: 305px;
 			height: 47px;
 		}
+	}
+
+	.u-dot {
+		width: 5px;
 	}
 
 	.c-header {
@@ -225,9 +232,9 @@
 		margin-bottom: 58px;
 
 		.c-hito-size {
-			width: calc(100% - 19px);
-			margin-left: 19px;
-			margin-right: unset;
+			max-width: 312px;
+			width: 100%;
+			margin: 0 auto;
 		}
 	}
 

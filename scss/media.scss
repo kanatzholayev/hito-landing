@@ -21,6 +21,7 @@
 	}
 
 	p {
+		font-weight: 400;
 		font-size: 20px;
 		line-height: 41px;
 
@@ -40,6 +41,11 @@
 
 	.u-a::after {
 		bottom: 2px;
+	}
+
+	.u-underline {
+		text-decoration: underline 1px;
+		text-underline-offset: 3px;
 	}
 
 	.u-show--mobile {
@@ -149,6 +155,9 @@
 		width: 68px;
 		right: 261px;
 		bottom: 140px;
+
+		animation: moveXmobile 6s linear 0s infinite alternate,
+			moveYmobile 10s linear 0s infinite alternate;
 	}
 
 	.c-intro {

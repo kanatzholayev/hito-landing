@@ -42,7 +42,7 @@ b {
 }
 
 p {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 2.08vw;
 	line-height: 3.47vw;
 
@@ -122,6 +122,11 @@ button {
 		bottom: 0.27vw;
 		left: 0;
 	}
+}
+
+.u-underline {
+	text-decoration: underline 0.07vw;
+	text-underline-offset: 0.21vw;
 }
 
 .o-container {
@@ -295,9 +300,47 @@ button {
 	width: 4.79vw;
 	bottom: 16.18vw;
 	right: 13.88vw;
+	animation: moveX 6s linear 0s infinite alternate,
+		moveY 10s linear 0s infinite alternate;
 
 	img {
 		width: 100%;
+	}
+}
+
+@keyframes moveX {
+	from {
+		right: 30.88vw;
+	}
+	to {
+		right: 0vw;
+	}
+}
+
+@keyframes moveY {
+	from {
+		bottom: calc(100% - 4.79vw);
+	}
+	to {
+		bottom: 5vw;
+	}
+}
+
+@keyframes moveXmobile {
+	from {
+		right: calc(100% - 68px);
+	}
+	to {
+		right: 0;
+	}
+}
+
+@keyframes moveYmobile {
+	from {
+		bottom: 180px;
+	}
+	to {
+		bottom: 0;
 	}
 }
 

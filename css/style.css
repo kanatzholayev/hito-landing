@@ -121,11 +121,11 @@ button {
 }
 .u-a::after {
   content: "";
-  height: 1px;
+  height: 0.07vw;
   width: 100%;
   position: absolute;
   background-color: #252926;
-  bottom: 4px;
+  bottom: 0.27vw;
   left: 0;
 }
 
@@ -692,6 +692,14 @@ button {
   font-size: 0.97vw;
   line-height: 2.01vw;
   text-align: center;
+}
+.c-footer__text .u-a {
+  color: inherit;
+  font-weight: bold;
+}
+.c-footer__text .u-a::after {
+  background-color: #ecf5ee;
+  bottom: 0.14vw;
 }
 
 .c-join {

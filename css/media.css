@@ -383,7 +383,7 @@
   }
 
   .c-footer {
-    padding: 36px;
+    padding: 36px 10px;
   }
 
   .c-footer__logo {
@@ -393,9 +393,6 @@
   .c-footer__text {
     font-size: 14px;
     line-height: 25px;
-  }
-  .c-footer__text br {
-    display: none;
   }
 
   .c-join {

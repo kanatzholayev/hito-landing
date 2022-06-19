@@ -14,6 +14,29 @@
 		<link rel="stylesheet" href="css/fonts/stylesheet.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/media.css" />
+		<!-- MailerLite Universal -->
+		<script>
+			(function (w, d, e, u, f, l, n) {
+				(w[f] =
+					w[f] ||
+					function () {
+						(w[f].q = w[f].q || []).push(arguments);
+					}),
+					(l = d.createElement(e)),
+					(l.async = 1),
+					(l.src = u),
+					(n = d.getElementsByTagName(e)[0]),
+					n.parentNode.insertBefore(l, n);
+			})(
+				window,
+				document,
+				"script",
+				"https://assets.mailerlite.com/js/universal.js",
+				"ml"
+			);
+			ml("account", "77153");
+		</script>
+		<!-- End MailerLite Universal -->
 	</head>
 	<body>
 		<header class="c-header">
@@ -261,7 +284,12 @@
 			<div class="o-container">
 				<h2>Join the <br class="u-show--mobile" />waiting list</h2>
 				<p>We’ll let you know when we start accepting orders</p>
-				<button class="c-button--black">SUBSCRIBE</button>
+				<button
+					class="c-button--black ml-onclick-form"
+					onclick="ml('show', 'eQBIut', true)"
+				>
+					SUBSCRIBE
+				</button>
 				<h2 id="c-join-telegram">...OR DON’t JUST WAIT. HELP!</h2>
 				<p>
 					Help us ship it faster and make it better. How? Join
@@ -384,6 +412,22 @@
 				></small
 			>
 		</footer>
+		<style type="text/css">
+			@import url("https://groot.mailerlite.com/assets/plugins/groot/modules/includes/groot_fonts/import.css?version=1655276");
+		</style>
+		<script>
+			function ml_webform_success_702250() {
+				var $ = ml_jQuery || jQuery;
+				$(".ml-subscribe-form-702250 .row-success").show();
+				$(".ml-subscribe-form-702250 .row-form").hide();
+			}
+		</script>
+
+		<script
+			src="https://groot.mailerlite.com/js/w/webforms.min.js?v050a6799b8b1eabb5074d837d7d1d46f"
+			type="text/javascript"
+		></script>
+
 		<script src="js/script.js"></script>
 	</body>
 </html>

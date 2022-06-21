@@ -497,6 +497,20 @@ button {
 .c-info__size .c-lighter {
   margin: 4.09vw 6.73vw 0 3.95vw;
   width: 6.04vw;
+  height: 25.76vw;
+  position: relative;
+}
+.c-info__size .c-lighter .c-lighter__gif {
+  width: 2.43vw;
+  position: absolute;
+  top: -0.97vw;
+  left: 0.69vw;
+}
+.c-info__size .c-lighter .c-lighter__img {
+  width: 5.69vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .c-info__size .c-hito-size {
   width: 33.125vw;
@@ -658,6 +672,19 @@ button {
   bottom: 0;
   left: 61.32vw;
   width: 13.75vw;
+  height: 6.25vw;
+}
+.c-cat .c-cat__gif {
+  width: 60%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-cat .c-cat__img {
+  width: 17.67%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .c-faq {

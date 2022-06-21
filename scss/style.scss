@@ -383,10 +383,6 @@ button {
 		max-width: 69.375vw;
 		padding-left: 3.4vw;
 		margin-bottom: 6.45vw;
-
-		.c-bird-icon {
-			// transform: translateY(15%) scale(1.79);
-		}
 	}
 
 	.u-margin-fix {
@@ -452,6 +448,22 @@ button {
 	.c-lighter {
 		margin: 4.09vw 6.73vw 0 3.95vw;
 		width: 6.04vw;
+		height: 25.76vw;
+		position: relative;
+
+		.c-lighter__gif {
+			width: 2.43vw;
+			position: absolute;
+			top: -0.97vw;
+			left: 0.69vw;
+		}
+
+		.c-lighter__img {
+			width: 5.69vw;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
 	}
 
 	.c-hito-size {
@@ -625,6 +637,21 @@ button {
 	bottom: 0;
 	left: 61.32vw;
 	width: 13.75vw;
+	height: 6.25vw;
+
+	.c-cat__gif {
+		width: 60%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.c-cat__img {
+		width: 17.67%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 .c-faq {

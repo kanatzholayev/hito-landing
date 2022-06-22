@@ -867,3 +867,52 @@ button {
 .u-inline-block {
   display: inline-block;
 }
+
+.c-cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+.c-cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}

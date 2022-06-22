@@ -837,7 +837,7 @@ button {
 
 .c-cursor {
 	display: inline-block;
-	background-color: #ccc;
+	background-color: #00ff39;
 	margin-left: 0.1rem;
 	width: 3px;
 	animation: blink 1s infinite;
@@ -848,10 +848,10 @@ button {
 
 @keyframes blink {
 	0% {
-		background-color: #ccc;
+		background-color: #00ff39;
 	}
 	49% {
-		background-color: #ccc;
+		background-color: #00ff39;
 	}
 	50% {
 		background-color: transparent;
@@ -860,6 +860,6 @@ button {
 		background-color: transparent;
 	}
 	100% {
-		background-color: #ccc;
+		background-color: #00ff39;
 	}
 }

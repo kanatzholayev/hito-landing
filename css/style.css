@@ -871,8 +871,8 @@ button {
 .c-cursor {
   display: inline-block;
   background-color: #00ff39;
-  margin-left: 0.1rem;
-  width: 3px;
+  margin-left: 0.69vw;
+  width: 0.07vw;
   -webkit-animation: blink 1s infinite;
           animation: blink 1s infinite;
 }

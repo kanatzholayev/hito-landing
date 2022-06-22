@@ -454,4 +454,9 @@
     width: 201px;
     margin-right: unset;
   }
+
+  .c-cursor {
+    margin-left: 10px;
+    width: 1px;
+  }
 }

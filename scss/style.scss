@@ -863,3 +863,11 @@ button {
 		background-color: #00ff39;
 	}
 }
+
+.c-main-video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}

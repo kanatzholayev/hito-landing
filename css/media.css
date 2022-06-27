@@ -212,9 +212,32 @@
     padding-left: unset;
     margin-bottom: 50px;
   }
-  .c-info__nfc .c-phone-nfc {
-    width: 100%;
+  .c-info__nfc .c-connection-video {
+    opacity: 1;
+  }
+  .c-info__nfc .c-hito-orange {
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-animation: unset;
+            animation: unset;
+    margin-top: unset;
     margin-right: unset;
+    width: 134px;
+  }
+  .c-info__nfc .c-phone-nfc__wrapper {
+    margin-right: unset;
+  }
+  .c-info__nfc .c-phone-nfc {
+    width: 164px;
+    margin-right: unset;
+  }
+  .c-info__nfc .c-phone-nfc__img {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .c-info__text {

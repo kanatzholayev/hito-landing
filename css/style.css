@@ -457,15 +457,92 @@ button {
   padding-left: 3.4vw;
   margin-bottom: 6.66vw;
 }
-.c-info__nfc .c-phone-nfc {
-  width: 11.38vw;
+.c-info__nfc .c-phone-nfc__wrapper {
+  position: relative;
   margin-right: 18.33vw;
 }
+.c-info__nfc .c-phone-nfc__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.c-info__nfc.animate .c-connection-video {
+  -webkit-animation: connection 8s ease;
+          animation: connection 8s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.c-info__nfc.animate .c-hito-orange {
+  -webkit-animation: hito-animation 4s ease-in-out;
+          animation: hito-animation 4s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.c-info__nfc .c-connection-video {
+  position: absolute;
+  top: 4.16vw;
+  left: 0.69vw;
+  width: calc(100% - 1.38vw);
+  opacity: 0;
+}
+.c-info__nfc .c-phone-nfc {
+  width: 11.38vw;
+}
 .c-info__nfc .c-hito-orange {
+  margin-top: 7.22vw;
   width: 9.3vw;
   margin-right: 3.75vw;
 }
 
+@-webkit-keyframes connection {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes connection {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hito-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-19.79vw);
+            transform: translateX(-19.79vw);
+  }
+}
+@keyframes hito-animation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-19.79vw);
+            transform: translateX(-19.79vw);
+  }
+}
 .c-info__display {
   display: -webkit-box;
   display: -ms-flexbox;

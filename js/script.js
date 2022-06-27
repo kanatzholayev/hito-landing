@@ -58,7 +58,41 @@ function erase() {
 	}
 }
 
+const block = document.querySelector(".c-info__nfc");
+const blockTrigger = block.nextElementSibling;
+const connectionVideo = document.querySelector(".c-connection-video");
+
+let played = false;
+
+function scrolListener(e) {
+	const screenTop = document.scrollingElement.scrollTop;
+	const screenBottom = screenTop + innerHeight;
+	const textTop = blockTrigger.getBoundingClientRect().top;
+
+	if (textTop < screenBottom && textTop < screenTop) {
+		if (window.innerWidth > 767) {
+			block.classList.add("animate");
+			connectionVideo.autoplay = false;
+			connectionVideo.loop = false;
+			setTimeout(() => {
+				if (!played) {
+					connectionVideo.play();
+					played = true;
+				}
+			}, 4000);
+		} else {
+			block.classList.remove("animate");
+			connectionVideo.autoplay = true;
+			connectionVideo.loop = true;
+			connectionVideo.play();
+		}
+	}
+}
+
+document.onscroll = scrolListener;
+
 document.addEventListener("DOMContentLoaded", function () {
+	scrolListener();
 	document.getElementById("autoplay").play();
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);

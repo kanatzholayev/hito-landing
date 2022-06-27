@@ -218,9 +218,30 @@
 		padding-left: unset;
 		margin-bottom: 50px;
 
-		.c-phone-nfc {
-			width: 100%;
+		.c-connection-video {
+			opacity: 1;
+		}
+
+		.c-hito-orange {
+			transform: unset;
+			animation: unset;
+			margin-top: unset;
 			margin-right: unset;
+			width: 134px;
+		}
+
+		.c-phone-nfc__wrapper {
+			margin-right: unset;
+		}
+
+		.c-phone-nfc {
+			width: 164px;
+			margin-right: unset;
+		}
+
+		.c-phone-nfc__img {
+			align-items: flex-start;
+			justify-content: space-between;
 		}
 	}
 

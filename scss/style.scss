@@ -412,14 +412,67 @@ button {
 	padding-left: 3.4vw;
 	margin-bottom: 6.66vw;
 
-	.c-phone-nfc {
-		width: 11.38vw;
+	.c-phone-nfc__wrapper {
+		position: relative;
 		margin-right: 18.33vw;
 	}
 
+	.c-phone-nfc__img {
+		display: flex;
+	}
+
+	&.animate {
+		.c-connection-video {
+			animation: connection 8s ease;
+			animation-fill-mode: forwards;
+		}
+
+		.c-hito-orange {
+			animation: hito-animation 4s ease-in-out;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	.c-connection-video {
+		position: absolute;
+		top: 4.16vw;
+		left: 0.69vw;
+		width: calc(100% - 1.38vw);
+		opacity: 0;
+	}
+
+	.c-phone-nfc {
+		width: 11.38vw;
+	}
+
 	.c-hito-orange {
+		margin-top: 7.22vw;
 		width: 9.3vw;
 		margin-right: 3.75vw;
+	}
+}
+
+@keyframes connection {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hito-animation {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-19.79vw);
 	}
 }
 

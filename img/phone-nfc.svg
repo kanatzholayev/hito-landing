@@ -1,36 +1,7 @@
 <svg width="164" height="314" viewBox="0 0 164 314" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="0.5" width="163" height="313" rx="14.5" fill="#ECF5EE" stroke="#252926"/>
-<rect x="4.5" y="4.5" width="155" height="305" rx="11.5" fill="#252926" stroke="#252926"/>
+<rect x="4.5" y="4.5" width="155" height="305" rx="11.5" fill="#292E2B" stroke="#252926"/>
 <path d="M46.5 4.5H117.5V12C117.5 13.3807 116.381 14.5 115 14.5H49C47.6193 14.5 46.5 13.3807 46.5 12V4.5Z" fill="#ECF5EE" stroke="#252926"/>
 <rect x="73.5" y="8.5" width="17" height="2" rx="1" stroke="#252926"/>
 <rect x="111.5" y="8.5" width="2" height="2" rx="1" stroke="#252926"/>
-<rect x="32.5" y="114.5" width="8" height="8" transform="rotate(90 32.5 114.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="41.5" y="114.5" width="8" height="8" transform="rotate(90 41.5 114.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="109.5" y="69.5" width="8" height="8" transform="rotate(90 109.5 69.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="118.5" y="78.5" width="8" height="8" transform="rotate(90 118.5 78.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="118.5" y="87.5" width="8" height="8" transform="rotate(90 118.5 87.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="127.5" y="96.5" width="8" height="8" transform="rotate(90 127.5 96.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="97.5" y="105.5" width="8" height="8" transform="rotate(90 97.5 105.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="65.5" y="105.5" width="8" height="8" transform="rotate(90 65.5 105.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="56.5" y="96.5" width="8" height="8" transform="rotate(90 56.5 96.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="88.5" y="96.5" width="8" height="8" transform="rotate(90 88.5 96.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="88.5" y="87.5" width="8" height="8" transform="rotate(90 88.5 87.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="79.5" y="78.5" width="8" height="8" transform="rotate(90 79.5 78.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="79.5" y="150.5" width="8" height="8" transform="rotate(90 79.5 150.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="127.5" y="105.5" width="8" height="8" transform="rotate(90 127.5 105.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="97.5" y="114.5" width="8" height="8" transform="rotate(90 97.5 114.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="65.5" y="114.5" width="8" height="8" transform="rotate(90 65.5 114.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="127.5" y="114.5" width="8" height="8" transform="rotate(90 127.5 114.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="97.5" y="123.5" width="8" height="8" transform="rotate(90 97.5 123.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="65.5" y="123.5" width="8" height="8" transform="rotate(90 65.5 123.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="56.5" y="132.5" width="8" height="8" transform="rotate(90 56.5 132.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="127.5" y="123.5" width="8" height="8" transform="rotate(90 127.5 123.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="88.5" y="132.5" width="8" height="8" transform="rotate(90 88.5 132.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="88.5" y="141.5" width="8" height="8" transform="rotate(90 88.5 141.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="109.5" y="159.5" width="8" height="8" transform="rotate(90 109.5 159.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="118.5" y="150.5" width="8" height="8" transform="rotate(90 118.5 150.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="118.5" y="141.5" width="8" height="8" transform="rotate(90 118.5 141.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="127.5" y="132.5" width="8" height="8" transform="rotate(90 127.5 132.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="100.5" y="60.5" width="8" height="8" transform="rotate(90 100.5 60.5)" fill="#ECF5EE" stroke="#ECF5EE"/>
-<rect x="-0.5" y="-0.5" width="8" height="8" transform="matrix(-1.31134e-07 -1 -1 1.31134e-07 100 176)" fill="#ECF5EE" stroke="#ECF5EE"/>
 </svg>

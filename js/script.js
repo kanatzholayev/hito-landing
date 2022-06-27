@@ -79,7 +79,7 @@ function scrolListener(e) {
 					connectionVideo.play();
 					played = true;
 				}
-			}, 4000);
+			}, 6000);
 		} else {
 			block.classList.remove("animate");
 			connectionVideo.autoplay = true;

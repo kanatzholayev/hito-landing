@@ -467,14 +467,14 @@ button {
   display: flex;
 }
 .c-info__nfc.animate .c-connection-video {
-  -webkit-animation: connection 8s ease;
-          animation: connection 8s ease;
+  -webkit-animation: connection 8s 2s ease;
+          animation: connection 8s 2s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 .c-info__nfc.animate .c-hito-orange {
-  -webkit-animation: hito-animation 4s ease-in-out;
-          animation: hito-animation 4s ease-in-out;
+  -webkit-animation: hito-animation 4s 2s ease-in-out;
+          animation: hito-animation 4s 2s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

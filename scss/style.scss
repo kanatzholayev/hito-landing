@@ -423,12 +423,12 @@ button {
 
 	&.animate {
 		.c-connection-video {
-			animation: connection 8s ease;
+			animation: connection 8s 2s ease;
 			animation-fill-mode: forwards;
 		}
 
 		.c-hito-orange {
-			animation: hito-animation 4s ease-in-out;
+			animation: hito-animation 4s 2s ease-in-out;
 			animation-fill-mode: forwards;
 		}
 	}

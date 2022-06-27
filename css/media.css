@@ -72,6 +72,11 @@
     width: 5px;
   }
 
+  .c-typed-text__wrapper {
+    min-height: 132px;
+    display: inline-block;
+  }
+
   .c-header {
     margin-top: 11px;
   }

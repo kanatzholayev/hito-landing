@@ -219,6 +219,11 @@
   }
   .c-info__nfc .c-connection-video {
     opacity: 1;
+    -webkit-animation: unset;
+            animation: unset;
+    top: 60px;
+    left: 10px;
+    width: calc(100% - 20px);
   }
   .c-info__nfc .c-hito-orange {
     -webkit-transform: unset;

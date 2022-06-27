@@ -225,6 +225,10 @@
 
 		.c-connection-video {
 			opacity: 1;
+			animation: unset;
+			top: 60px;
+			left: 10px;
+			width: calc(100% - 20px);
 		}
 
 		.c-hito-orange {

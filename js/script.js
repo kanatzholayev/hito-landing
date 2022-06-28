@@ -72,8 +72,6 @@ function scrolListener(e) {
 	if (textTop < screenBottom && textTop < screenTop) {
 		if (window.innerWidth > 767) {
 			block.classList.add("animate");
-			connectionVideo.autoplay = false;
-			connectionVideo.loop = false;
 			setTimeout(() => {
 				if (!played) {
 					connectionVideo.play();
@@ -97,6 +95,7 @@ window.addEventListener("scroll", function (e) {
 document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
 	document.getElementById("autoplay").play();
+	document.querySelector(".c-connection-video--mobile").play();
 
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);

@@ -80,10 +80,10 @@ function scrolListener(e) {
 			}, 6000);
 		} else {
 			block.classList.remove("animate");
-			if (!played) {
-				document.querySelector(".c-connection-video--mobile").play();
-				played = true;
-			}
+			document.querySelector(".c-connection-video--loop").classList.add("hide");
+			document
+				.querySelector(".c-connection-video--no-loop")
+				.classList.add("show");
 		}
 	}
 }
@@ -94,8 +94,8 @@ window.addEventListener("scroll", function (e) {
 
 document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
+
 	document.getElementById("autoplay").play();
-	document.querySelector(".c-connection-video--mobile").play();
 
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);

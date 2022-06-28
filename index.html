@@ -4,10 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff"
-			http-equiv="Content-Type"
-		/>
 		<title>HITO hardware crypto wallet</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -145,14 +141,24 @@
 							<img
 								src="img/phone-nfc.svg"
 								alt="Phone NFC"
-								class="c-phone-nfc"
+								class="c-phone-nfc u-hide--mobile"
+							/>
+							<img
+								src="img/phone-nfc-mobile.svg"
+								alt="Phone NFC"
+								class="c-phone-nfc u-show--mobile"
 							/>
 							<video class="c-connection-video u-hide--mobile" muted>
 								<source src="img/connection.mp4" type="video/mp4" />
 							</video>
-							<video class="c-connection-video--mobile u-show--mobile" muted>
-								<source src="img/connection.mp4" type="video/mp4" />
-							</video>
+							<img
+								class="c-connection-video--mobile c-connection-video--loop u-show--mobile"
+								src="img/connection.gif"
+							/>
+							<img
+								class="c-connection-video--mobile c-connection-video--no-loop u-show--mobile"
+								src="img/connection-no-loop.gif"
+							/>
 						</div>
 						<img src="img/hito-orange.svg" alt="Hito" class="c-hito-orange" />
 					</div>

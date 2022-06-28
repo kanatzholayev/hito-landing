@@ -218,11 +218,22 @@
     margin-bottom: 50px;
   }
   .c-info__nfc .c-connection-video--mobile {
-    display: block !important;
     position: absolute;
     top: 60px;
     left: 10px;
     width: calc(100% - 20px);
+  }
+  .c-info__nfc .c-connection-video--loop {
+    opacity: 1;
+  }
+  .c-info__nfc .c-connection-video--loop.hide {
+    opacity: 0;
+  }
+  .c-info__nfc .c-connection-video--no-loop {
+    opacity: 0;
+  }
+  .c-info__nfc .c-connection-video--no-loop.show {
+    opacity: 1;
   }
   .c-info__nfc .c-hito-orange {
     -webkit-transform: unset;

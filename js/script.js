@@ -96,9 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
 	document.getElementById("autoplay").play();
 
-	if (window.innerWidth < 767) {
-		connectionVideo.play();
-	}
+	document.querySelector(".c-connection-video--mobile").play();
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);
 });

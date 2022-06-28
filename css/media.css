@@ -218,9 +218,11 @@
     margin-bottom: 50px;
   }
   .c-info__nfc .c-connection-video {
-    opacity: 1;
-    -webkit-animation: unset;
-            animation: unset;
+    opacity: 1 !important;
+    -webkit-animation: unset !important;
+            animation: unset !important;
+    -webkit-animation-fill-mode: unset !important;
+            animation-fill-mode: unset !important;
     top: 60px;
     left: 10px;
     width: calc(100% - 20px);

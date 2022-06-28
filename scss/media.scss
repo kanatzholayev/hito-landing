@@ -223,11 +223,8 @@
 		padding-left: unset;
 		margin-bottom: 50px;
 
-		.c-connection-video {
-			opacity: 1 !important;
-			visibility: visible !important;
-			animation: unset !important;
-			animation-fill-mode: unset !important;
+		.c-connection-video--mobile {
+			position: absolute;
 			top: 60px;
 			left: 10px;
 			width: calc(100% - 20px);

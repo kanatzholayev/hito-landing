@@ -224,8 +224,9 @@
 		margin-bottom: 50px;
 
 		.c-connection-video {
-			opacity: 1;
-			animation: unset;
+			opacity: 1 !important;
+			animation: unset !important;
+			animation-fill-mode: unset !important;
 			top: 60px;
 			left: 10px;
 			width: calc(100% - 20px);

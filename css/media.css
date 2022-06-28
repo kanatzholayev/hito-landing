@@ -219,6 +219,7 @@
   }
   .c-info__nfc .c-connection-video {
     opacity: 1 !important;
+    visibility: visible !important;
     -webkit-animation: unset !important;
             animation: unset !important;
     -webkit-animation-fill-mode: unset !important;

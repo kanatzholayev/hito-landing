@@ -439,6 +439,7 @@ button {
 		left: 0.69vw;
 		width: calc(100% - 1.38vw);
 		opacity: 0;
+		visibility: hidden;
 	}
 
 	.c-phone-nfc {
@@ -455,15 +456,19 @@ button {
 @keyframes connection {
 	0% {
 		opacity: 0;
+		visibility: hidden;
 	}
 	50% {
 		opacity: 0;
+		visibility: hidden;
 	}
 	51% {
 		opacity: 1;
+		visibility: visible;
 	}
 	100% {
 		opacity: 1;
+		visibility: visible;
 	}
 }
 

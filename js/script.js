@@ -84,7 +84,6 @@ function scrolListener(e) {
 			block.classList.remove("animate");
 			connectionVideo.autoplay = true;
 			connectionVideo.loop = true;
-			connectionVideo.play();
 		}
 	}
 }
@@ -94,6 +93,10 @@ document.onscroll = scrolListener;
 document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
 	document.getElementById("autoplay").play();
+
+	if (window.innerWidth < 767) {
+		connectionVideo.play();
+	}
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);
 });

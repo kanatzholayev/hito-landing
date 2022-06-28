@@ -88,7 +88,9 @@ function scrolListener(e) {
 	}
 }
 
-document.onscroll = scrolListener;
+window.addEventListener("scroll", function (e) {
+	scrolListener();
+});
 
 document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();

@@ -82,8 +82,10 @@ function scrolListener(e) {
 			}, 6000);
 		} else {
 			block.classList.remove("animate");
-			connectionVideo.autoplay = true;
-			connectionVideo.loop = true;
+			if (!played) {
+				document.querySelector(".c-connection-video--mobile").play();
+				played = true;
+			}
 		}
 	}
 }
@@ -96,7 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
 	document.getElementById("autoplay").play();
 
-	document.querySelector(".c-connection-video--mobile").play();
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);
 });

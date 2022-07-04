@@ -100,3 +100,53 @@ document.addEventListener("DOMContentLoaded", function () {
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+function initializeStars(parent, whiteStarsCount, blueStarsCount) {
+	for (let i = 0; i < whiteStarsCount; i++) {
+		const starDiv = document.createElement("div");
+		starDiv.classList.add("c-white-star");
+		parent.appendChild(starDiv);
+	}
+	for (let i = 0; i < blueStarsCount; i++) {
+		const starDiv = document.createElement("div");
+		starDiv.classList.add("c-blue-star");
+		parent.appendChild(starDiv);
+	}
+}
+
+function getRandomInt(min, max) {
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function setPositions(parent) {
+	const whiteStars = parent.querySelectorAll(".c-white-star");
+	const blueStars = parent.querySelectorAll(".c-blue-star");
+
+	const parentWidth = parent.offsetWidth;
+	const parentHeight = parent.offsetHeight;
+
+	whiteStars.forEach((elem) => {
+		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
+		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
+	});
+	blueStars.forEach((elem) => {
+		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
+		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
+	});
+}
+
+function animateStars(parent, whiteStarsCount, blueStarsCount, delay) {
+	initializeStars(parent, whiteStarsCount, blueStarsCount);
+	setPositions(parent);
+	setInterval(() => {
+		setPositions(parent);
+	}, delay);
+}
+
+animateStars(document.querySelector(".c-subtitle-block"), 50, 50, 5000);
+
+document.querySelectorAll(".c-explore__card").forEach((elem) => {
+	animateStars(elem, 20, 20, 3000);
+});

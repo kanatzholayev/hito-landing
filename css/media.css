@@ -502,4 +502,10 @@
     margin-left: 10px;
     width: 1px;
   }
+
+  .c-blue-star,
+.c-white-star {
+    width: 1px;
+    height: 1px;
+  }
 }

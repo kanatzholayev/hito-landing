@@ -1,3 +1,5 @@
+// Accordion
+
 const acc = document.getElementsByClassName("c-accordion__btn");
 
 for (let i = 0; i < acc.length; i++) {
@@ -11,6 +13,8 @@ for (let i = 0; i < acc.length; i++) {
 		}
 	});
 }
+
+// Typing text animation
 
 const typedTextSpan = document.querySelector(".c-typed-text");
 const cursorSpan = document.querySelector(".c-cursor");
@@ -58,6 +62,8 @@ function erase() {
 	}
 }
 
+// Toggle connection animation on scroll
+
 const block = document.querySelector(".c-info__nfc");
 const blockTrigger = block.nextElementSibling;
 const connectionVideo = document.querySelector(".c-connection-video");
@@ -92,14 +98,7 @@ window.addEventListener("scroll", function (e) {
 	scrolListener();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	scrolListener();
-
-	document.getElementById("autoplay").play();
-
-	// On DOM Load initiate the effect
-	if (textArray.length) setTimeout(type, newTextDelay + 250);
-});
+// Stars animation
 
 function initializeStars(parent, whiteStarsCount, blueStarsCount) {
 	for (let i = 0; i < whiteStarsCount; i++) {
@@ -148,4 +147,15 @@ animateStars(document.querySelector(".c-subtitle-block"), 50, 50, 5000);
 
 document.querySelectorAll(".c-explore__card").forEach((elem) => {
 	animateStars(elem, 20, 20, 3000);
+});
+
+// DOM Load
+
+document.addEventListener("DOMContentLoaded", function () {
+	scrolListener();
+
+	document.getElementById("autoplay").play();
+
+	// On DOM Load initiate the effect
+	if (textArray.length) setTimeout(type, newTextDelay + 250);
 });

@@ -129,25 +129,76 @@ function setPositions(parent) {
 	whiteStars.forEach((elem) => {
 		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
 		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
-		elem.style.animationDelay = `${getRandomInt(0, 2000)}ms`;
+		elem.style.animationDelay = `${getRandomInt(0, 4000)}ms`;
 	});
 	blueStars.forEach((elem) => {
 		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
 		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
-		elem.style.animationDelay = `${getRandomInt(0, 2000)}ms`;
+		elem.style.animationDelay = `${getRandomInt(0, 4000)}ms`;
 	});
 }
 
-function animateStars(parent, whiteStarsCount, blueStarsCount, delay) {
+function animateStars(parent, whiteStarsCount, blueStarsCount) {
 	initializeStars(parent, whiteStarsCount, blueStarsCount);
 	setPositions(parent);
 }
 
-animateStars(document.querySelector(".c-subtitle-block"), 50, 50, 5000);
+animateStars(document.querySelector(".c-subtitle-block"), 50, 50);
 
 document.querySelectorAll(".c-explore__card").forEach((elem) => {
 	animateStars(elem, 20, 20, 3000);
 });
+
+// animate big stars
+
+function initializeBigStars(parent, count) {
+	for (let i = 0; i < count; i++) {
+		const star = document.createElement("div");
+		star.classList.add("c-big-star");
+		star.innerHTML = `
+		<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 9 3)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 7 5)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 5 3)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 9 7)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 5 7)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 2 0)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 12 10)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 12 0)" fill="#252926"/>
+			<rect width="2" height="2" transform="matrix(-1 0 0 1 2 10)" fill="#252926"/>
+		</svg>		
+		`;
+		parent.appendChild(star);
+	}
+}
+
+function setBigStarPositions(parent) {
+	const stars = parent.querySelectorAll(".c-big-star");
+
+	const parentWidth = parent.offsetWidth;
+	const parentHeight = parent.offsetHeight;
+
+	stars.forEach((elem) => {
+		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
+		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
+		elem.style.animationDelay = `${getRandomInt(0, 2000)}ms`;
+		elem.style.animationDuration = `${getRandomInt(5000, 10000)}ms`;
+		x = Math.floor(Math.random() * 2) == 0;
+		if (x) {
+			elem.style.animationName = "rotate-stars-reverse";
+			console.log("hi");
+		} else {
+			elem.style.animationName = "rotate-stars";
+		}
+	});
+}
+
+function animateBigStars(parent, count) {
+	initializeBigStars(parent, count);
+	setBigStarPositions(parent);
+}
+
+animateBigStars(document.querySelector(".c-info"), 10);
 
 // DOM Load
 

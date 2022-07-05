@@ -149,7 +149,7 @@ button {
 
 .c-header__desc {
 	display: inline-block;
-	width: 12.36vw;
+	width: 15.2vw;
 
 	img {
 		width: 100%;
@@ -371,6 +371,7 @@ button {
 
 .c-info {
 	padding-top: 8.26vw;
+	position: relative;
 
 	h2 {
 		text-transform: uppercase;
@@ -936,7 +937,7 @@ button {
 	background-color: #ecf5ee;
 	position: absolute;
 	z-index: 0;
-	animation: 2s infinite star-twinkle;
+	animation: 4s infinite star-twinkle;
 }
 
 .c-blue-star {
@@ -945,7 +946,14 @@ button {
 	background-color: #0057ff;
 	position: absolute;
 	z-index: 0;
-	animation: 2s infinite star-twinkle;
+	animation: 4s infinite star-twinkle;
+}
+
+.c-big-star {
+	position: absolute;
+	z-index: -1;
+	animation: infinite linear;
+	transform-origin: center;
 }
 
 @keyframes star-twinkle {
@@ -957,5 +965,23 @@ button {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes rotate-stars {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-stars-reverse {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-360deg);
 	}
 }

@@ -936,6 +936,7 @@ button {
 	background-color: #ecf5ee;
 	position: absolute;
 	z-index: 0;
+	animation: 2s infinite star-twinkle;
 }
 
 .c-blue-star {
@@ -944,4 +945,17 @@ button {
 	background-color: #0057ff;
 	position: absolute;
 	z-index: 0;
+	animation: 2s infinite star-twinkle;
+}
+
+@keyframes star-twinkle {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

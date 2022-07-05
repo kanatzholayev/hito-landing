@@ -130,19 +130,18 @@ function setPositions(parent) {
 	whiteStars.forEach((elem) => {
 		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
 		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
+		elem.style.animationDelay = `${getRandomInt(0, 2000)}ms`;
 	});
 	blueStars.forEach((elem) => {
 		elem.style.top = `${getRandomInt(0, parentHeight)}px`;
 		elem.style.left = `${getRandomInt(0, parentWidth)}px`;
+		elem.style.animationDelay = `${getRandomInt(0, 2000)}ms`;
 	});
 }
 
 function animateStars(parent, whiteStarsCount, blueStarsCount, delay) {
 	initializeStars(parent, whiteStarsCount, blueStarsCount);
 	setPositions(parent);
-	setInterval(() => {
-		setPositions(parent);
-	}, delay);
 }
 
 animateStars(document.querySelector(".c-subtitle-block"), 50, 50, 5000);

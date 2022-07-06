@@ -547,4 +547,23 @@
 		width: 1px;
 		height: 1px;
 	}
+
+	.c-cookie__wrapper {
+		width: calc(100vw - 24px);
+		height: auto;
+		padding: 20px;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.c-cookie__text {
+		margin-bottom: 10px;
+	}
+
+	.c-cookie__button {
+		width: 132px;
+	}
 }

@@ -1086,3 +1086,52 @@ button {
             transform: rotate(-360deg);
   }
 }
+.c-cookie__wrapper {
+  position: fixed;
+  bottom: 1.66vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0 3.33vw;
+  -webkit-column-gap: 6.25vw;
+     -moz-column-gap: 6.25vw;
+          column-gap: 6.25vw;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75vw;
+  height: 9.3vw;
+  background: #ffcbcb;
+  border: 0.41vw solid #e6ff83;
+  z-index: 111;
+}
+.c-cookie__wrapper.hide {
+  display: none;
+}
+.c-cookie__wrapper.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-cookie__text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.38vw;
+  line-height: 2.08vw;
+}
+
+.c-cookie__button {
+  font-weight: 700;
+  font-size: 1.38vw;
+  line-height: 2.56vw;
+  text-transform: uppercase;
+  width: 12.08vw;
+  height: 2.77vw;
+  background: #ecf5ee;
+  border: 0.138vw solid #252926;
+}

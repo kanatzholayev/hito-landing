@@ -186,7 +186,6 @@ function setBigStarPositions(parent) {
 		x = Math.floor(Math.random() * 2) == 0;
 		if (x) {
 			elem.style.animationName = "rotate-stars-reverse";
-			console.log("hi");
 		} else {
 			elem.style.animationName = "rotate-stars";
 		}
@@ -200,12 +199,45 @@ function animateBigStars(parent, count) {
 
 animateBigStars(document.querySelector(".c-info"), 10);
 
+// Cookie
+
+let popUp = document.getElementById("cookiePopup");
+//When user clicks the accept button
+document.getElementById("acceptCookie").addEventListener("click", () => {
+	//Create date object
+	let d = new Date();
+	//Increment the current time by 1 minute (cookie will expire after 1 minute)
+	d.setMinutes(2 + d.getMinutes());
+	//Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+	document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+	//Hide the popup
+	popUp.classList.add("hide");
+	popUp.classList.remove("show");
+});
+//Check if cookie is already present
+const checkCookie = () => {
+	//Read the cookie and split on "="
+	let input = document.cookie.toString();
+	//Check for our cookie
+	if (input.includes("myCookieName")) {
+		//Hide the popup
+		popUp.classList.add("hide");
+		popUp.classList.remove("show");
+	} else {
+		//Show the popup
+		popUp.classList.add("show");
+		popUp.classList.remove("hide");
+	}
+};
+
 // DOM Load
 
 document.addEventListener("DOMContentLoaded", function () {
 	scrolListener();
 
 	document.getElementById("autoplay").play();
+
+	checkCookie();
 
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);

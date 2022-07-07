@@ -867,6 +867,37 @@ button {
 	}
 }
 
+.c-button--white {
+	display: flex;
+	justify-content: center;
+	width: 26.32vw;
+	height: 3.75vw;
+	border: none;
+	background-color: transparent;
+	color: #252926;
+	border: 2px solid #252926;
+	font-weight: 700;
+	font-size: 2.08vw;
+	line-height: 3.47vw;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	margin-bottom: 8.75vw;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: -6px;
+		left: -6px;
+		width: calc(100% + 2px);
+		height: calc(100% + 2px);
+		z-index: -1;
+		border: 5px solid #e6ff83;
+		pointer-events: none;
+	}
+}
+
 .c-button--black {
 	display: flex;
 	justify-content: center;
@@ -882,6 +913,19 @@ button {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	text-decoration: none;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: -6px;
+		left: -6px;
+		width: calc(100% + 2px);
+		height: calc(100% + 2px);
+		z-index: -1;
+		border: 5px solid #e6ff83;
+		pointer-events: none;
+	}
 }
 
 .u-dot {
@@ -990,10 +1034,11 @@ button {
 	position: fixed;
 	bottom: 1.66vw;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, 200%);
+	visibility: hidden;
 	padding: 0 3.33vw;
 	column-gap: 6.25vw;
-	display: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 75vw;
@@ -1001,13 +1046,16 @@ button {
 	background: #ffcbcb;
 	border: 0.41vw solid #e6ff83;
 	z-index: 111;
+	transition: all 0.4s ease-in-out;
 
 	&.hide {
-		display: none;
+		transform: translate(-50%, 200%);
+		visibility: hidden;
 	}
 
 	&.show {
-		display: flex;
+		transform: translate(-50%, 0%);
+		visibility: visible;
 	}
 }
 

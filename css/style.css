@@ -903,6 +903,40 @@ button {
   margin-bottom: 7.56vw;
 }
 
+.c-button--white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 26.32vw;
+  height: 3.75vw;
+  border: none;
+  background-color: transparent;
+  color: #252926;
+  border: 2px solid #252926;
+  font-weight: 700;
+  font-size: 2.08vw;
+  line-height: 3.47vw;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 8.75vw;
+}
+.c-button--white::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  z-index: -1;
+  border: 5px solid #e6ff83;
+  pointer-events: none;
+}
+
 .c-button--black {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -922,6 +956,18 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+}
+.c-button--black::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  z-index: -1;
+  border: 5px solid #e6ff83;
+  pointer-events: none;
 }
 
 .u-dot {
@@ -1090,13 +1136,16 @@ button {
   position: fixed;
   bottom: 1.66vw;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translate(-50%, 200%);
+          transform: translate(-50%, 200%);
+  visibility: hidden;
   padding: 0 3.33vw;
   -webkit-column-gap: 6.25vw;
      -moz-column-gap: 6.25vw;
           column-gap: 6.25vw;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1108,14 +1157,18 @@ button {
   background: #ffcbcb;
   border: 0.41vw solid #e6ff83;
   z-index: 111;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .c-cookie__wrapper.hide {
-  display: none;
+  -webkit-transform: translate(-50%, 200%);
+          transform: translate(-50%, 200%);
+  visibility: hidden;
 }
 .c-cookie__wrapper.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  visibility: visible;
 }
 
 .c-cookie__text {

@@ -261,6 +261,24 @@ button {
 	z-index: 2;
 	margin-top: 3.75vw;
 
+	.c-green-star:nth-child(2n) {
+		animation-name: rotate-stars-reverse;
+	}
+
+	.c-green-star:nth-child(1) {
+		top: 2.63vw;
+		right: 45.48vw;
+	}
+
+	.c-green-star:nth-child(2) {
+		top: 23.4vw;
+		right: 24.02vw;
+	}
+	.c-green-star:nth-child(3) {
+		bottom: 4.02vw;
+		left: 38.54vw;
+	}
+
 	h2 {
 		color: #e0ede3;
 
@@ -1068,6 +1086,18 @@ button {
 	svg {
 		width: 0.83vw;
 		height: 0.83vw;
+	}
+}
+
+.c-green-star {
+	position: absolute;
+	z-index: -1;
+	animation: infinite linear rotate-stars 5s;
+	transform-origin: center;
+
+	svg {
+		width: 0.7vw;
+		height: 0.7vw;
 	}
 }
 

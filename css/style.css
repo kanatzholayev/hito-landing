@@ -283,6 +283,22 @@ button {
   z-index: 2;
   margin-top: 3.75vw;
 }
+.c-subtitle-block .c-green-star:nth-child(2n) {
+  -webkit-animation-name: rotate-stars-reverse;
+          animation-name: rotate-stars-reverse;
+}
+.c-subtitle-block .c-green-star:nth-child(1) {
+  top: 2.63vw;
+  right: 45.48vw;
+}
+.c-subtitle-block .c-green-star:nth-child(2) {
+  top: 23.4vw;
+  right: 24.02vw;
+}
+.c-subtitle-block .c-green-star:nth-child(3) {
+  bottom: 4.02vw;
+  left: 38.54vw;
+}
 .c-subtitle-block h2 {
   color: #e0ede3;
 }
@@ -1152,6 +1168,19 @@ button {
 .c-big-star svg {
   width: 0.83vw;
   height: 0.83vw;
+}
+
+.c-green-star {
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: infinite linear rotate-stars 5s;
+          animation: infinite linear rotate-stars 5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.c-green-star svg {
+  width: 0.7vw;
+  height: 0.7vw;
 }
 
 @-webkit-keyframes star-twinkle {

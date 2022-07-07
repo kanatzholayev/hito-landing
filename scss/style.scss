@@ -254,7 +254,7 @@ button {
 
 .c-subtitle-block {
 	background-color: #252926;
-	// background-image: url("../img/undertitle-bg.png");
+	background-image: url("../img/undertitle-bg.png");
 	background-size: cover;
 	padding: 10.41vw 0 14.23vw;
 	position: relative;
@@ -376,6 +376,47 @@ button {
 	h2 {
 		text-transform: uppercase;
 		margin-bottom: 5.06vw;
+	}
+
+	.c-big-star:nth-child(2n) {
+		animation: infinite linear rotate-stars-reverse 5s;
+	}
+
+	.c-big-star:nth-child(1) {
+		top: 19.4vw;
+		right: 14.37vw;
+	}
+	.c-big-star:nth-child(2) {
+		top: 47.2vw;
+		right: 25.34vw;
+	}
+	.c-big-star:nth-child(3) {
+		top: 52.7vw;
+		left: 28.68vw;
+	}
+	.c-big-star:nth-child(4) {
+		top: 77.01vw;
+		right: 14.37vw;
+	}
+	.c-big-star:nth-child(5) {
+		top: 147.08vw;
+		right: 9.93vw;
+	}
+	.c-big-star:nth-child(6) {
+		top: 150.69vw;
+		right: 32.15vw;
+	}
+	.c-big-star:nth-child(7) {
+		top: 50%;
+		right: 18.125vw;
+	}
+	.c-big-star:nth-child(8) {
+		bottom: 34.58vw;
+		right: 37.01vw;
+	}
+	.c-big-star:nth-child(9) {
+		bottom: 16.38vw;
+		right: 14.65vw;
 	}
 }
 
@@ -539,6 +580,31 @@ button {
 		text-transform: uppercase;
 		margin-bottom: 4.51vw;
 	}
+
+	.c-big-star:nth-child(2n) {
+		animation: infinite linear rotate-stars-reverse 5s;
+	}
+
+	.c-big-star:nth-child(1) {
+		top: 3.4vw;
+		right: 47.43vw;
+	}
+	.c-big-star:nth-child(2) {
+		top: 35.2vw;
+		right: 5.9vw;
+	}
+	.c-big-star:nth-child(3) {
+		bottom: 20.97vw;
+		left: 42.56vw;
+	}
+	.c-big-star:nth-child(4) {
+		bottom: 29.58vw;
+		right: 41.45vw;
+	}
+	.c-big-star:nth-child(5) {
+		bottom: 24.02vw;
+		right: 17.56vw;
+	}
 }
 
 .c-explore__wrapper {
@@ -568,7 +634,7 @@ button {
 		}
 	}
 	.c-explore__card:nth-child(2) {
-		// background-image: url("../img/explore-bg1.png");
+		background-image: url("../img/explore-bg1.png");
 
 		&::before {
 			content: "";
@@ -582,7 +648,7 @@ button {
 		}
 	}
 	.c-explore__card:nth-child(3) {
-		// background-image: url("../img/explore-bg2.png");
+		background-image: url("../img/explore-bg2.png");
 
 		&::before {
 			content: "";
@@ -614,7 +680,7 @@ button {
 	}
 
 	.c-explore__card:nth-child(1) {
-		// background-image: url("../img/explore-bg3.png");
+		background-image: url("../img/explore-bg3.png");
 
 		&::after {
 			content: "";
@@ -639,7 +705,7 @@ button {
 		}
 	}
 	.c-explore__card:nth-child(3) {
-		// background-image: url("../img/explore-bg4.png");
+		background-image: url("../img/explore-bg4.png");
 
 		&::before {
 			content: "";
@@ -663,7 +729,7 @@ button {
 	}
 
 	.c-explore__card:nth-child(4) {
-		// background-image: url("../img/explore-bg5.png");
+		background-image: url("../img/explore-bg5.png");
 	}
 }
 
@@ -976,8 +1042,8 @@ button {
 }
 
 .c-white-star {
-	width: 0.07vw;
-	height: 0.07vw;
+	width: 0.13vw;
+	height: 0.13vw;
 	background-color: #ecf5ee;
 	position: absolute;
 	z-index: 0;
@@ -985,8 +1051,8 @@ button {
 }
 
 .c-blue-star {
-	width: 0.07vw;
-	height: 0.07vw;
+	width: 0.13vw;
+	height: 0.13vw;
 	background-color: #0057ff;
 	position: absolute;
 	z-index: 0;
@@ -996,8 +1062,13 @@ button {
 .c-big-star {
 	position: absolute;
 	z-index: -1;
-	animation: infinite linear;
+	animation: infinite linear rotate-stars 5s;
 	transform-origin: center;
+
+	svg {
+		width: 0.83vw;
+		height: 0.83vw;
+	}
 }
 
 @keyframes star-twinkle {

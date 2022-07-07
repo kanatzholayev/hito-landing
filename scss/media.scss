@@ -551,6 +551,7 @@
 
 	.c-cookie__wrapper {
 		width: calc(100vw - 24px);
+		bottom: 24px;
 		height: auto;
 		padding: 20px;
 		justify-content: flex-start;
@@ -558,13 +559,24 @@
 		flex-direction: column;
 		font-size: 14px;
 		line-height: 20px;
+		border: 6px solid #e6ff83;
 	}
 
 	.c-cookie__text {
 		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 20px;
+
+		a {
+			font-style: italic;
+		}
 	}
 
 	.c-cookie__button {
 		width: 132px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 37px;
+		border: 2px solid #252926;
 	}
 }

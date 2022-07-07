@@ -14,51 +14,6 @@
 		<link rel="stylesheet" href="css/fonts/stylesheet.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/media.css" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-CT443LHPG1"
-		></script>
-		<script>
-			// Cookie
-
-			let popUp = document.getElementById("cookiePopup");
-			//When user clicks the accept button
-			document.getElementById("acceptCookie").addEventListener("click", () => {
-				//Create date object
-				let d = new Date();
-				//Increment the current time by 1 minute (cookie will expire after 1 minute)
-				d.setDate(8 + d.getDate());
-				//Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
-				document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
-				//Hide the popup
-				popUp.classList.add("hide");
-				popUp.classList.remove("show");
-
-				window.dataLayer = window.dataLayer || [];
-				function gtag() {
-					dataLayer.push(arguments);
-				}
-				gtag("js", new Date());
-
-				gtag("config", "G-CT443LHPG1");
-			});
-			//Check if cookie is already present
-			const checkCookie = () => {
-				//Read the cookie and split on "="
-				let input = document.cookie.toString();
-				//Check for our cookie
-				if (input.includes("myCookieName")) {
-					//Hide the popup
-					popUp.classList.add("hide");
-					popUp.classList.remove("show");
-				} else {
-					//Show the popup
-					popUp.classList.add("show");
-					popUp.classList.remove("hide");
-				}
-			};
-		</script>
 		<!-- MailerLite Universal -->
 		<script>
 			(function (w, d, e, u, f, l, n) {
@@ -1476,5 +1431,51 @@
 		></script>
 
 		<script src="js/script.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-CT443LHPG1"
+		></script>
+		<script>
+			// Cookie
+
+			let popUp = document.getElementById("cookiePopup");
+			//When user clicks the accept button
+			document.getElementById("acceptCookie").addEventListener("click", () => {
+				//Create date object
+				let d = new Date();
+				//Increment the current time by 1 minute (cookie will expire after 1 minute)
+				d.setDate(8 + d.getDate());
+				//Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+				document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+				//Hide the popup
+				popUp.classList.add("hide");
+				popUp.classList.remove("show");
+
+				window.dataLayer = window.dataLayer || [];
+				function gtag() {
+					dataLayer.push(arguments);
+				}
+				gtag("js", new Date());
+
+				gtag("config", "G-CT443LHPG1");
+			});
+			//Check if cookie is already present
+			const checkCookie = () => {
+				//Read the cookie and split on "="
+				let input = document.cookie.toString();
+				//Check for our cookie
+				if (input.includes("myCookieName")) {
+					//Hide the popup
+					popUp.classList.add("hide");
+					popUp.classList.remove("show");
+				} else {
+					//Show the popup
+					popUp.classList.add("show");
+					popUp.classList.remove("hide");
+				}
+			};
+		</script>
 	</body>
 </html>

@@ -162,4 +162,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// On DOM Load initiate the effect
 	if (textArray.length) setTimeout(type, newTextDelay + 250);
+
+	// Get request when DOM Loaded
+	fetch("https://hito.xyz/px?frontpage_hit");
+
+	// Get requests for key events
+	document.querySelector(".c-button--green").addEventListener("click", () => {
+		fetch("https://hito.xyz/px?frontpage_click_preorder");
+	});
+
+	document.querySelector(".c-button--white").addEventListener("click", () => {
+		fetch("https://hito.xyz/px?frontpage_click_contribute");
+	});
+});
+
+let scrolled = false;
+
+window.addEventListener("scroll", () => {
+	if (
+		window.scrollY > document.querySelector("#c-join-telegram").scrollTop &&
+		!scrolled
+	) {
+		scrolled = true;
+		fetch("https://hito.xyz/px?frontpage_scroll_helpus");
+	}
 });

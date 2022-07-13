@@ -633,8 +633,8 @@ button {
 	max-width: 75vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 3.75vw;
-	row-gap: 3.75vw;
+	column-gap: 3.6vw;
+	row-gap: 3.6vw;
 }
 
 .c-explore__cards--security {
@@ -1182,6 +1182,10 @@ button {
 	background: #ecf5ee;
 	border: 0.138vw solid #252926;
 	letter-spacing: 0.1em;
+}
+
+.c-ecwid__wrapper {
+	max-width: 70%;
 }
 
 // ecwid styles

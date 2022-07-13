@@ -701,12 +701,12 @@ button {
   max-width: 75vw;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3.75vw 1fr 3.75vw 1fr;
+  -ms-grid-columns: 1fr 3.6vw 1fr 3.6vw 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 3.75vw;
-     -moz-column-gap: 3.75vw;
-          column-gap: 3.75vw;
-  row-gap: 3.75vw;
+  -webkit-column-gap: 3.6vw;
+     -moz-column-gap: 3.6vw;
+          column-gap: 3.6vw;
+  row-gap: 3.6vw;
 }
 
 .c-explore__cards--security {
@@ -1306,6 +1306,10 @@ button {
   background: #ecf5ee;
   border: 0.138vw solid #252926;
   letter-spacing: 0.1em;
+}
+
+.c-ecwid__wrapper {
+  max-width: 70%;
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-store__content-wrapper:not(.ec-store__content-wrapper--wide) {

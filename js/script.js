@@ -187,3 +187,14 @@ window.addEventListener("scroll", () => {
 		fetch("https://hito.xyz/px?frontpage_scroll_helpus");
 	}
 });
+
+let root = document.documentElement;
+
+window.addEventListener("resize", () => {
+	const viewport = Math.max(root.clientWidth, window.innerWidth || 0);
+	if (viewport >= 1440) {
+		root.style.setProperty("--viewport-width", 1440 + "px");
+	} else {
+		root.style.setProperty("--viewport-width", viewport + "px");
+	}
+});

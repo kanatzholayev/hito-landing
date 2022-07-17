@@ -477,6 +477,9 @@
     -webkit-transform: translateY(35%) scale(1.92);
             transform: translateY(35%) scale(1.92);
   }
+  .c-join .o-container {
+    margin-left: unset;
+  }
   .c-join .c-button--black:last-child {
     margin-bottom: 58px;
   }
@@ -567,5 +570,6 @@
 
   .c-ecwid__wrapper {
     max-width: 100%;
+    margin-bottom: unset;
   }
 }

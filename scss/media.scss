@@ -515,6 +515,11 @@
 				transform: translateY(35%) scale(1.92);
 			}
 		}
+
+		.o-container {
+			margin-left: unset;
+		}
+
 		.c-button--black:last-child {
 			margin-bottom: 58px;
 		}
@@ -598,5 +603,6 @@
 
 	.c-ecwid__wrapper {
 		max-width: 100%;
+		margin-bottom: unset;
 	}
 }

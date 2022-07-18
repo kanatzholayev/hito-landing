@@ -1071,13 +1071,15 @@ button {
 
 .c-main-video {
 	width: var(--viewport-width);
+}
+.c-bg-video__wrapper {
 	position: absolute;
+	width: 100%;
 	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 0;
+	background-color: #f1f2f0;
 	z-index: -1;
 }
-
 .c-white-star {
 	width: calc(0.13 * var(--viewport-width) / 100);
 	height: calc(0.13 * var(--viewport-width) / 100);
